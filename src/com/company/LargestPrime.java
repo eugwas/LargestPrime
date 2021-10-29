@@ -1,7 +1,13 @@
 package com.company;
 
 public class LargestPrime {
-    public static int getLargestPrime(int number) {
+    private int number;
+
+    public LargestPrime(int number) {
+        this.number = number;
+    }
+
+    public int getLargestPrime(int number) {
         if (number < 2) {
             return -1;
         }

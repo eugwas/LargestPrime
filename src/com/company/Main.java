@@ -10,7 +10,8 @@ public class Main {
         boolean hasNextInt = scanner.hasNextInt();
         if (hasNextInt) {
             int number = scanner.nextInt();
-            System.out.println("Largest prime factor = " + LargestPrime.getLargestPrime(number));
+            LargestPrime largestPrime = new LargestPrime(number);
+            System.out.println("Largest prime factor = " + largestPrime.getLargestPrime(number));
         } else {
             System.out.println("Invalid number");
         }
